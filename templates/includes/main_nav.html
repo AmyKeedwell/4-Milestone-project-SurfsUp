@@ -17,12 +17,12 @@
                 Watersports
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="watersports-link">
+                <a href="{% url 'products' %}?category=surfboards,bodyboards,paddleboards,kayaks,accessories" class="dropdown-item">All</a>
                 <a href="{% url 'products' %}?category=surfboards" class="dropdown-item">Surf Boards</a>
                 <a href="{% url 'products' %}?category=bodyboards" class="dropdown-item">Body Boards</a>
                 <a href="{% url 'products' %}?category=paddleboards" class="dropdown-item">Paddle Boards</a>
                 <a href="{% url 'products' %}?category=kayaks" class="dropdown-item">Kayaks</a>
                 <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
-                <a href="{% url 'products' %}?category=surfboards,bodyboards,paddleboards,kayaks,accessories" class="dropdown-item">All</a>
             </div>
         </li>
 
@@ -31,6 +31,7 @@
                 Attire
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="attire-link">
+                <a href="{% url 'products' %}?category=wetsuits,shoes" class="dropdown-item">All</a>
                 <a href="{% url 'products' %}?category=wetsuits" class="dropdown-item">Wetsuits</a>
                 <a href="{% url 'products' %}?category=shoes" class="dropdown-item">Shoes</a>
             </div>
