@@ -3,7 +3,7 @@ html {
     height: 100%;
 }
 
-body {
+.body {
     background: url('/media/water-sports-front.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
@@ -26,6 +26,15 @@ body {
     background: white;
     color: black;
     min-width: 260px;
+}
+
+.product_image{
+    height: 30vh;
+    width: 30vh;
+}
+
+.heading-color {
+    background: rgb(128, 238, 223);
 }
 
 /* from Bulma */
