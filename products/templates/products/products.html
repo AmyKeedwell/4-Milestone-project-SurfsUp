@@ -15,6 +15,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col text-center mt-3 heading-color">
+                    <hr class="w-75 mb-1">
                     <h2 class="text-font">PRODUCTS</h2>
                     {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
@@ -54,7 +55,7 @@
                     <div class="row">
                         {% for product in products %}
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="card h-100 border-0">
+                                <div class="card-body h-100 border-0">
                                      {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top img-fluid product_image" src="{{ product.image.url }}" alt="{{ product.name }}">
